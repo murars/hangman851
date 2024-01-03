@@ -1,9 +1,9 @@
 import random
-word_list = ["watermelon","pomegranate", "banana", "apple", "melon"]
-print(word_list)
+fruit_list = ["watermelon","pomegranate", "banana", "apple", "melon"]
+print(fruit_list)
 
-word = random.choice(word_list)
-print(word)
+chosen_fruit = random.choice(fruit_list)
+print(chosen_fruit)
 
 guess = input("Please enter a single letter: ")
 
