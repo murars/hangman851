@@ -8,14 +8,11 @@ Add documentation to your GitHub README file. You can refer to the relevant less
 
 Updated this info below. 
 At minimum, your README file should contain the following information:
-
 Project Title
-
 Table of Contents, if the README file is long   
 # means 
 <b>It provides an organized list of links at the beginning of the document, allowing readers to quickly navigate to different sections of the README.<b>
 #
-
 A description of the project: what it does, the aim of the project, and what you learned
 Installation instructions
 Usage instructions
