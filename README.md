@@ -1,51 +1,64 @@
-# Hangman
 Hangman is a game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-Add documentation to your GitHub README file. You can refer to the relevant lesson in the prerequisites for this task for more information.
+STAGE - I - Installations and creating a virtual environment. 
+
+Install VS Code, which is the environment code that will be written.
+Open a terminal in VS Code. 
+Create a directory called 'AICorePytEnv' 
+  * mkdir 'AICorePytEnv'
+Install miniconda3 which is a small bootstrap version of Anaconda which covers the most useful Python packages. 
+Create a virtual environment and activate it. 
+  * conda create --name AIcorePytEnv_env
+  * conda activate AIcorePytEnv_env ( you have to see virtual environment name instead of base )
+Install Git for version control.
+Install GitHub to create a repository and copy the remote hangman851 repository into the local.
 
 
-Updated this info below. 
-At minimum, your README file should contain the following information:
+STAGE - II - Clone the Remote Repository into the local:
 
-Project Title
-Table of Contents, if the README file is long   
-Table of Contents means  
-It provides an organized list of links at the beginning of the document, allowing readers to quickly navigate to different sections of the README.
-
-A description of the project: what it does, the aim of the project, and what you learned
-
-Installation instructions
-
-Prerequisites
-Ensure you have Python installed on your system. This game is compatible with Python 3.x.
-Basic knowledge of using command-line interface (CLI) or terminal.
-
-Steps to Install
-Clone the Repository:
-
-Open your terminal.
+Open your terminal in VS Code
 Use the command: git clone https://github.com/your-repository/hangman.git
-This will clone the game files to your local machine.
-Navigate to the Game Directory:
-
-Change your current working directory to the game folder: cd hangman
-Install Dependencies (if any):
-
-If the game requires any external libraries, install them using pip. For example: pip install -r requirements.txt
-Run the Game:
-
-Start the game by running the Python script: python hangman.py
-Additional Configuration (if applicable)
-If there are additional configuration steps such as setting up environment variables or modifying game settings, provide the instructions here.
-Troubleshooting
-Include common issues and solutions. For example, "If you encounter a 'ModuleNotFound' error, ensure all required libraries are installed."
+This will clone the game files to your local machine from the remote repo.
+Navigate to the Game Directory: you will see;
+  -hangman851
+  --hangman
+    -hangman_Template.py
 
 
-Usage instructions
+STAGE -III - Coding the game
 
-File structure of the project
+Change your current working directory to the game folder: cd hangman851/hangman
+Following hangman_Template.py,
+respectively;
 
-License information
-#
+Create 'milestone_2.py'  
+  * in terminal 'touch milestone_2.py'
+  * in this file ( milestone_2 )
+    * This file's pre-requests are the knowledge of random(), input(), len(), isalpha() functions and if-else statements.
+    * import 'random' package which is used to choose a word by the system.   
+    * Create a 'word_list' from which the system chooses a word. The list contains "watermelon", "pomegranate", "banana", "apple", "melon"
+    * Use the 'random' function which creates a word,
+    * Create an 'input' function which allows the user to guess the word by inputting a letter,
+    * Sets an if-else statement which consists of "len" and "isalpha" functions which respectively, check if the letter is single and alphabetic.
+
+ Create 'milestone_3.py'
+   * in terminal 'touch milestone_3.py'
+   * This file's pre-requests are the knowledge of the creation of a function, .lower(), while True: statement
+   * Transform the letter chosen by the user into a lowercase using the .lower() function.
+   * Check the letter if there is this letter in the chosen word.
+   * By while True, create a loop and continuously prompt the user to enter a single letter. Calls check_guess function to verify the guess. Exits the loop if a valid letter is guessed.  
+
+ Create 'milestone_4.py'
+   * in terminal 'touch milestone_4.py'
+   * This file's pre-requests are the knowledge of the creation of a Class, Class instances, Class parameters, " ".join(), .append(), break ( exit the loop in a certain condition ), enumerate()
+   * Create a Class called Hangman and define class instances which can be called later to be able to be used for different Hangman games.
+   * Copy the functions from milestone_3.py refining functions name to be able to be understood easily and correctly.
+
+Create 'milestone_5.py' 
+  * in terminal 'touch milestone_4.py' 
+  * This file's pre-requests are the knowledge of calling the class from out of the class, __name__ == '__main__': 
+  * Create a game (function) out of the class.
+  * Run the code under the same directory with the code ( __name__ == '__main__':)
+
