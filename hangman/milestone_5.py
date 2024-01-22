@@ -7,19 +7,19 @@ class Hangman:
         self.num_letters = len(set(self.word))
         self.num_lives = num_lives
         self.list_of_letters = []
-        print(f"The mystery word has {len(self.word)} characters")
+        print(f"The word has {len(self.word)} characters")
         print(" ".join(self.word_guessed))
 
     def check_letter(self, letter) -> None: # -> None is a part of the function's type hinting in Python, indicating that the function does not have a return value.
         """
         Checks if the guessed letter is in the chosen word.
-        Prints a message indicating whether the guess is correct.
+        Prints a message shows if the guess is correct.
         """
         letter = letter.lower()
         if letter in self.word:
             if letter not in self.list_of_letters:
                 self.num_letters -= 1
-            for i, current_letter in enumerate(self.word):
+            for i, current_letter in enumerate(self.word):# index yaratmak icin kullandik.
                 if current_letter == letter:
                     self.word_guessed[i] = letter
             print(" ".join(self.word_guessed))
@@ -30,14 +30,15 @@ class Hangman:
 
     def ask_letter(self):
         """
-        Continuously prompts the user to enter a single letter.
+        Continuously asks the user to enter a single letter.
         Calls check_guess function to verify the guess.
-        Exits the loop if a valid letter is guessed.Continues prompting until the game is won or the player runs out of lives.
+        Exits the loop if a valid letter is guessed.
+        Continues ask until the game is won or the player has no lives.
         """
         while True:
             letter = input("Please enter a single letter: ")
             if len(letter) != 1 or not letter.isalpha():
-                print("Please, enter just one character")
+                print("Please, enter just one digit character")
                 
             elif letter in self.list_of_letters:
                 print(f"{letter} was already tried.")
@@ -47,7 +48,7 @@ class Hangman:
                 self.check_letter(letter)
                 break
 
-def play_game(word_list):
+def play_hangman(word_list):
     game = Hangman(word_list)
     while True:
         game.ask_letter()
@@ -55,12 +56,12 @@ def play_game(word_list):
             print(f"You lost! The word was {game.word}")
             break
         elif "_" not in game.word_guessed:
-            print("Congratulations! You won!")
+            print("Congratulations!, You won!")
             break
 
 if __name__ == '__main__':
-    word_list = ['apple', 'banana', 'orange','pear', 'strawberry', 'watermelon']
-    play_game(word_list)
+    word_list = ["watermelon","pomegranate", "banana", "apple", "melon"]
+    play_hangman(word_list)
 
 
 

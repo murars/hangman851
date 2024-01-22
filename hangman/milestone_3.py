@@ -24,7 +24,7 @@ def check_guess(guess,chosen_fruit):
             
 def ask_for_input(chosen_fruit):
     """
-    Continuously prompts the user to enter a single letter.
+    Continuously asks the user to enter a single letter.
     Calls check_guess function to verify the guess.
     Exits the loop if a valid letter is guessed.
     """
