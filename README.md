@@ -25,7 +25,6 @@ conda activate AIcorePytEnv_env
 **3 - Install Git and GitHub:**
 - Set up Git for version control.
 - Use GitHub to create a repository and copy the remote hangman851 repository into your local environment.
-
 **Learnings:** 
 - How a virtual environment is created and understanding the importance of a virtual environment. 
 - Understanding the version control with Git.
@@ -60,7 +59,6 @@ touch milestone_2.py
 ```
 - This file requires knowledge of random(), input(), len(), isalpha() functions, and if-else statements.
 - Implement features like word selection, user input handling, and basic validation.
-
 **Learnings:**
 - Python Programming Foundations: This project deepened my understanding of Python programming fundamentals. By implementing the Hangman game, I became more familiar with the syntax and core concepts of the language, which are crucial for any Python developer.
 
@@ -76,7 +74,6 @@ touch milestone_2.py
 ```
 touch milestone_3.py
 ```
-
 **Learnings:**
 
 - Loop Control and Continuity: Developing milestone_3.py taught me the essentials of loop control in Python, particularly using while True to create a continuous game loop. This was crucial for maintaining the game until the player either guesses the word or runs out of lives.
@@ -88,28 +85,18 @@ touch milestone_3.py
 ```
 touch milestone_4.py
 ``````
-- Develop a Hangman class with methods for game functionality.
+**Learnings:**
+- Object-Oriented Programming (OOP): In milestone_4.py, I delved into OOP in Python. Creating a Hangman class helped me understand how to encapsulate game logic and attributes within a class structure.
+- Classes and Methods: Learning to define methods within a class and using class instances was transformative. It made the code more organized, modular, and reusable, which are critical aspects of effective software development.
+- Structural Advantages: I recognized the advantages of structuring a program using classes and objects. It facilitated better organization of code, made it more readable, and allowed for easier debugging and future enhancements.
 
 **4 - Create milestone_5.py:**
 ```
 touch milestone_5.py
 ```
 - Implement the main game loop and ensure it runs correctly under if __name__ == '__main__':.
-
 **Learnings:**
-- Object-Oriented Programming (OOP): In milestone_4.py, I delved into OOP in Python. Creating a Hangman class helped me understand how to encapsulate game logic and attributes within a class structure.
-- Classes and Methods: Learning to define methods within a class and using class instances was transformative. It made the code more organized, modular, and reusable, which are critical aspects of effective software development.
-- Structural Advantages: I recognized the advantages of structuring a program using classes and objects. It facilitated better organization of code, made it more readable, and allowed for easier debugging and future enhancements.
 
-
-**4 - Create milestone_5.py:**
-``` 
-touch milestone_5.py
-```
-- Implement the main game loop and ensure it runs correctly under if __name__ == '__main__':
-
-**Learnings:**
 - Integration of Game Components: In milestone_5.py, my focus was on integrating the various components of the game. This process taught me how different parts of a program interact and work together to create a cohesive application.
 - Significance of if __name__ == '__main__':: Understanding this Python idiom was crucial. It allowed me to design the script to be run as a standalone program or imported as a module without executing the game immediately. This is a best practice in Python programming for structuring scripts effectively.
 - Bringing the Project Together: Finalizing the game involved not only code integration but also a thorough testing phase. I learned the importance of testing and debugging to ensure the game runs smoothly and provides a good user experience.
-
